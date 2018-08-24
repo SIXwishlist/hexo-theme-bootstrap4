@@ -1,6 +1,6 @@
-# hexo-theme-space-cadet
+# hexo-theme-bootstrap4
 
-A modern, purple-accented [Bootstrap 4](http://getbootstrap.com/) blog theme for [Hexo](https://hexo.io).
+A modern [Bootstrap 4](http://getbootstrap.com/) blog theme for [Hexo](https://hexo.io).
 
 **[Demo Site](https://www.andrewzigler.com/blog)**
 
@@ -16,14 +16,13 @@ Uses [Fancybox](http://fancybox.net/) for images.
 
 ```bash 
 $ cd site-folder
-$ git clone https://github.com/azigler/hexo-theme-space-cadet.git themes/hexo-theme-space-cadet
-$ dd
+$ git clone https://github.com/jodumont/hexo-theme-bootstrap4.git themes/hexo-bootstrap4
 ```
 
 ### Update the site's _config.yml
 ```yml
 # Extensions
-theme: hexo-theme-space-cadet
+theme: hexo-theme-bootstrap4
 ```
 
 ## Configuration
@@ -37,6 +36,9 @@ menu:
 
 # RSS
 rss:
+
+# Theme Color
+color: '#ffffff'
 
 # Content
 favicon: favicon.ico
@@ -83,6 +85,17 @@ google_analytics:
 ### RSS
 
 - *rss:* relative URL for atom.xml file
+
+> It works well with [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
+
+### Color
+
+- *color:* will define the theme-color for browsers and platforms
+
+> 1. generate your logo with [Real Favicon Generator](https://realfavicongenerator.net);
+> 2. put these inside your ./source folder;
+> 3. choose a color for your theme (generally is the main color of your logo).  
+> Don't forget the **' '** and the **#** before your color code.
 
 ### Content
 
@@ -141,7 +154,7 @@ This theme has 6 default widgets that can be displayed in the sidebar:
 
 ### Bootstrap Paginator Helper
 
-A custom `bs_paginator()` helper is used to produce [pagination markup for Bootstrap 4](https://v4-alpha.getbootstrap.com/components/pagination/). It is used in place of Hexo's default `paginator()`.
+A custom `bs_paginator()` helper is used to produce [pagination markup for Bootstrap 4.1](https://getbootstrap.com/docs/4.1/components/pagination/). It is used in place of Hexo's default `paginator()`.
 
 ```
 <%- bs_paginator({
@@ -162,6 +175,7 @@ The article partials also include schema tags from [Schema.org](https://schema.o
 
 ## MIT License
 
+Copyright © 2018 JOduMonT (legal@jodumont.com)
 Copyright © 2017 Andrew Zigler (andrewzigler@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
