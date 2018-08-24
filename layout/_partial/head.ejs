@@ -20,10 +20,10 @@
 	<title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
 	<%- meta_maker() %>
 	<% if (theme.rss){ %><link rel="alternate" href="<%- url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml"><% } %>
-	<% if (theme.favicon){ %><link rel="icon" href="<%- url_for(theme.favicon) %>?<%- date_xml(Date.now()) %>"><% } %><% if (theme.fancybox){ %><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
-<% } %>	<% if (config.highlight.enable){ %><link href="//fonts.googleapis.com/css?family=Source+Code+Pro|Jura" rel="stylesheet" type="text/css"><% }else{ %><link href="//fonts.googleapis.com/css?family=Jura" rel="stylesheet" type="text/css"><% } %>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<% if (theme.favicon){ %><link rel="icon" href="<%- url_for(theme.favicon) %>?<%- date_xml(Date.now()) %>"><% } %>
+	<% if (theme.fancybox){ %><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" /><% } %>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<%- css('css/style.css?'+date_xml(Date.now())) %>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<%- partial('google-analytics') %>
 </head>
